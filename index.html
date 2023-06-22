@@ -6,26 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Discovery Rush</title>
+    <script>
+        document.getElementById("thisomsa").addEventListener('click', navigate('thisomsa'));
+        document.getElementById("vchanchi").addEventListener('click', navigate('vchanchi'));
+
+        function navigate(name) {
+            window.location = `./pages/${name}.html`
+        }
+    </script>
     <style>
         body {
-            background-color: blue;
+            background-image: url('./images/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
         }
     </style>
 </head>
 <body>
     <main class="h-screen flex flex-col justify-center items-center">
-        <h1 class="mb-4">Profile</h1>
-        <div class="flex flex-row">
-            <div class="w-48 p-4 rounded-md hover:shadow-xl hover:bg-white/80 flex flex-col items-center">
-                <img class="rounded-full w-32 h-32 mb-4" src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg" alt="profile-img" />
-                <div class="">
-                    <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800">
-                        Thitiwut Somsa
-                    </h5>
-                </div>
+        <h1 class="mb-4 text-2xl font-bold text-slate-100">Select Profile</h1>
+        <div class="flex flex-row gap-2 sm:gap-8">
+            <div id="vchanchi" class="w-36 sm:w-48 py-4 px-2 rounded-md hover:shadow-xl hover:bg-slate-600/20 hover:cursor-pointer flex flex-col items-center">
+                <img
+                    class="rounded-full w-28 h-28 sm:w-40 sm:h-40 mb-4"
+                    src="./images/vchanchi.jpg"
+                    alt="vchanchi-img" />
+                <h5 class="mb-2 text-md sm:text-lg font-medium leading-tight text-slate-400">
+                    vchanchi
+                </h5>
             </div>
-            <!-- <div id="vchanchi"></div>
-            <div id="thisomsa"></div> -->
+            <div id="thisomsa" class="w-36 sm:w-48 py-4 px-2 rounded-md hover:shadow-xl hover:bg-slate-600/20 hover:cursor-pointer flex flex-col items-center">
+                <img
+                    class="rounded-full w-28 h-28 sm:w-40 sm:h-40 mb-4"
+                    src="./images/thisomsa.jpg"
+                    alt="thisomsa-img" />
+                <h5 class="mb-2 text-md sm:text-lg font-medium leading-tight text-slate-400">
+                    Thitiwut Somsa
+                </h5>
+            </div>
         </div>
     </main>
 </body>
