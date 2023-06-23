@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Discovery Rush</title>
+    <style>
+        body {
+            background-image: url('./bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    </style>
+    <script>
+        function navigate(name) {
+            window.location = `./${name}`
+        }
+    </script>
+</head>
+<body>
+    <main class="h-screen flex flex-col justify-center items-center">
+        <h1 class="mb-4 text-2xl font-bold text-slate-100">Select Profile</h1>
+        <div class="flex flex-row gap-2 sm:gap-8">
+            <div onclick="navigate('vchanchi')" class="w-36 sm:w-48 py-4 px-2 rounded-md hover:shadow-xl hover:bg-slate-600/20 hover:cursor-pointer flex flex-col items-center">
+                <img
+                    class="rounded-full w-28 h-28 sm:w-40 sm:h-40 mb-4"
+                    src="./vchanchi/images/my.jpg"
+                    alt="vchanchi-img" />
+                <h5 class="mb-2 text-md sm:text-lg font-medium leading-tight text-slate-400">
+                    vchanchi
+                </h5>
+            </div>
+            <div onclick="navigate('thisomsa')" class="w-36 sm:w-48 py-4 px-2 rounded-md hover:shadow-xl hover:bg-slate-600/20 hover:cursor-pointer flex flex-col items-center">
+                <img
+                    class="rounded-full w-28 h-28 sm:w-40 sm:h-40 mb-4"
+                    src="./thisomsa/images/my.jpg"
+                    alt="thisomsa-img" />
+                <h5 class="mb-2 text-md sm:text-lg font-medium leading-tight text-slate-400">
+                    Thitiwut Somsa
+                </h5>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

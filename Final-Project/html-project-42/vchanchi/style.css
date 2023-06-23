@@ -1,0 +1,119 @@
+body,html{
+  height: 100%;
+  margin: 0%;
+}
+div.sticky {
+  padding: 5px;
+  background-color: #040826;
+  border: 2px solid #ffffff;
+}
+.caption span.border{
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+
+.caption{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.my-custom-background-1{
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./images/my.jpg');
+  height: 60%;
+}
+
+.my-custom-background-2{
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://media2.giphy.com/media/u5BA8n3nGtCX6/giphy.gif");
+  height: 150%;
+
+}
+
+p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 30px;
+}
+
+.social table {
+  width: auto;
+  border: saddlebrown;
+  box-shadow: none;
+  margin: 0 auto;
+}
+
+.social img {
+  width: 100px;
+  height: 80px;
+  padding: 5px 0px 5px 0px;
+  border-radius: 100%;
+}
+
+table {
+  width: fit-content;
+  border-collapse: collapse;
+  border: none;
+  table-layout: fixed;
+  box-shadow: 0px 2px 6px 0px rgb(255, 255, 255);
+  height: 50px;
+}
+
+
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.progress-bar__container1 {
+  width: 80%;
+  height: 2rem;
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+  will-change: transform;
+  box-shadow: 0 0 5px #161616;
+}
+
+.progress-bar1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: #e76f51;
+  top:0;
+  bottom: 0;
+  left: -100%;
+  border-radius: inherit;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.progress-bar__text1 {
+  display: none;
+}
