@@ -1,0 +1,53 @@
+body,
+html {
+  height: 100%;
+  margin: 0%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.my-custom-background {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/cover.jpg');
+  height: 100%;
+}
+
+
+/* Style for the progress bar container */
+.progress-bar {
+  width: 300px;
+  height: 50px;
+  margin: 20px;
+}
+
+/* Style for the skill name */
+.progress-bar .skill-name {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  background-color: #f2f2f2;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+/* Style for the progress bar */
+.progress-bar .progress {
+  border-radius: 10px;
+  background-color: #4CAF50;
+  width: 50%;
+  height: 20px;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
