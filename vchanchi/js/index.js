@@ -1,5 +1,6 @@
 const components = [
 	'navbar',
+	'cover',
 	'aboutme',
 	'skill',
 	'contact',
